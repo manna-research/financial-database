@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Database</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+      header h1 {
+          font-family: georgia;
+          margin: 0;
+      }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            background-image: url('your-background-image.jpg'); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding: 50px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Financial Database</h1>
+    </header>
+
+    <!-- Form Section -->
+    <section>
+        <form action="/query" method="post">
+            <label for="bank_name">Company Name</label>
+            <input type="text" name="bank_name" required><br>
+
+            <label for="start_year">Start Year:</label>
+            <input type="number" name="start_year" required><br>
+
+            <label for="end_year">End Year:</label>
+            <input type="number" name="end_year" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+</html>
